@@ -26,6 +26,9 @@
       $(document).ready(function(){
         $('.sidenav').sidenav();
       });
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
     </script>
 
     <!--
@@ -44,9 +47,9 @@
           <a href="#!" class="brand-logo hide-on-med-and-up">R. Lapchynski</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="careergoals.html">Career Goals</a></li>
-            <li><a href="resume.html">Résumé</a></li>
+            <li class="active"><a href="resume.html">Résumé</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -54,9 +57,9 @@
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="careergoals.html">Career Goals</a></li>
-        <li><a href="resume.html">Résumé</a></li>
+        <li class="active"><a href="resume.html">Résumé</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -64,7 +67,7 @@
 
     <main>
       <div class="container">
-        <h1>Home</h1>
+        <h1>Résumé</h1>
 
         <p class="flow-text">I am Flow Text I am Flow Text I am Flow Text
           I am Flow Text I am Flow Text I am Flow Text I am Flow Text I am Flow Text
@@ -72,8 +75,26 @@
           I am Flow Text I am Flow Text I am Flow Text I am Flow Text I am Flow Text
           I am Flow Text I am Flow Text I am Flow Text
           I am Flow Text I am Flow Text I am Flow Text I am Flow Text I am Flow Text
-          I am Flow Text I am Flow Text I am Flow Text I am Flow Text I am Flow Text</p>
+          I am Flow Text I am Flow Text I am Flow Text I am Flow Text I am Flow Text
+        </p>
 
+        <ul class="collapsible popout">
+          <li class="active">
+            <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>First</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">keyboard_arrow_right</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header valign-wrapper">
+              <i class="material-icons">keyboard_arrow_right</i>Python
+            </div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer class="page-footer blue lighten-1">
